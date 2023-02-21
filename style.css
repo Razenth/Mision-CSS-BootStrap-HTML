@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+
+:root{
+    --fucshia: hsl(333, 100%, 43%);
+    --fucshia2: hsla(333, 100%, 43%, 0.548);
+    --white:hsl(0, 0%, 100%);
+    --whitetransparent:hsla(0, 0%, 100%, 0.741);
+    --gray:hsl(0, 8%, 91%);
+    --blue:hsl(227, 65%, 16%);
+    --blackTransparent:hsla(0, 0%, 0%, 0.822);
+    --darkgray:hsl(0, 1%, 50%);
+    --darkgray2:hsl(0, 1%, 22%);
+
+}
+
+footer{
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+.navbar{
+    display: flex;
+    height: 80px;
+    background-color: var(--blue);
+    color: var(--fucshia);
+}
+
+#header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.sub-nav{
+    display: flex;
+    width: 100%;
+    height: 70%
+}
+
+.iconNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+    color: white;
+}
+
+
+.navContent{
+    display: flex;
+    justify-content: end;
+    width: 75%;
+    align-items: center;
+    font-size: 25px;
+    word-spacing: 50px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+
+/* Home */
+
+
+.homeBody{
+    background-image: url(./asset/background__welcome.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100vh;
+}
+
+.homeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 100%;
+
+}
+
+.text1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    line-height: 150px;
+    color: white;
+    font-size: 120px; 
+    font-weight: 800;
+}
+
+.button1{
+    background-color: var(--fucshia);
+    height: 60px;
+    width: 300px;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-style: none;
+}
+
+
+/* Acerca  */
+
+.acercaContainer{
+    display: flex;
+    /* width: 100%; */
+    height: 95vh;
+    background-color:hsl(0, 0%, 79%) ;
+}
+
+.acercaIzq{
+    text-align: end;
+}
+
+
+.titleAcerca h1{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 15px;
+    color: black;
+}
+
+.titleAcerca h2{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 50px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.acercaIzq p{
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.desarrollo, .diseño, .WPO, .back, .social{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button2Container{
+    display: flex;
+    padding-top: 20px;
+}
+
+.button2{
+    background-color: var(--fucshia);
+    color: white;
+    height: 50px;
+    width: 250px;
+    align-self: flex-start;
+    border-style: none;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+/* Servicios */
+
+.serviciosContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.serviHead{
+    display: inline;
+    align-self: center;
+    border-bottom: 3px solid var(--fucshia);
+    border-top: 3px solid var(--fucshia);
+    margin: 20px;
+    margin-bottom: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.subServicios svg{
+    fill: var(--fucshia);
+}
+
+.subServicios h3{
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.subServicios p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.prograServi, .diseñoServi, .wpoServi, .seoServi, .smoServi, .webServi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 150px;
+}
+
+
+/* PORTAFOLIO */
+
+
+.portaContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.portaHead{
+    display: inline;
+    align-self: center;
+    border-bottom: 3px solid var(--fucshia);
+    border-top: 3px solid var(--fucshia);
+    margin: 20px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.subPorta{
+    width: 900px;
+    align-self: center;
+}
+
+.project1, .project2, .project3, .project4, .project5, .project6{
+    height: 400px;
+    color: white;
+}
+
+.project1{
+    background-image: url(./asset/portfolio-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.project2{
+    background-image: url(./asset/portfolio-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ; 
+}
+
+.project3{
+    background-image: url(./asset/portfolio-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ; 
+}
+
+.project4{
+    background-image: url(./asset/portfolio-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ; 
+}
+
+.project5{
+    background-image: url(./asset/portfolio-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ; 
+}
+
+.project6{
+    background-image: url(./asset/portfolio-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ; 
+}
+
+.inside1, .back1, .inside2, .back2, .inside3, .back3, .inside4, .back4, .back5, .inside6, .back6{
+    visibility: hidden;
+}
+
+.back1, .back2, .back3, .back4, .back5, .back6{
+    background-color:hsla(333, 100%, 43%, 0.548);
+    height: 100%;
+}
+
+.project1:hover .back1, .project1:hover .inside1, 
+.project2:hover .back2, .project2:hover .inside2,
+.project3:hover .back3, .project3:hover .inside3,
+.project4:hover .back4, .project4:hover .inside4,
+.project5:hover .back5, .project5:hover .inside5,
+.project6:hover .back6, .project6:hover .inside6{
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TESTIMONIOS */
+
+
+.testimoniosCont{
+    background-image: url(./asset/hero-image-customers.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.background{
+    background-color: rgba(255, 255, 255, 0.63);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.testHead{
+    display: inline;
+    align-self: center;
+    border-bottom: 3px solid var(--fucshia);
+    border-top: 3px solid var(--fucshia);
+    margin: 20px;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.subTesti{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background-color: white;
+    width: 700px;
+    padding-top: 50px;
+}
+
+.subTesti img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
