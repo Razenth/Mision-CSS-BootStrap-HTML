@@ -3,7 +3,7 @@
 
 :root{
     --fucshia: hsl(333, 100%, 43%);
-    --fucshia2: hsla(333, 100%, 43%, 0.548);
+    --fucshia2: hsla(333, 100%, 43%, 0.459);
     --white:hsl(0, 0%, 100%);
     --whitetransparent:hsla(0, 0%, 100%, 0.741);
     --gray:hsl(0, 8%, 91%);
@@ -35,6 +35,11 @@ footer{
     color: var(--fucshia);
 }
 
+.navbar a{
+    color: var(--fucshia);
+    text-decoration: none;
+}
+
 #header{
     position: fixed;
     z-index: 100;
@@ -62,9 +67,9 @@ footer{
     width: 75%;
     align-items: center;
     font-size: 25px;
-    word-spacing: 50px;
     padding-right: 10px;
     font-weight: 500;
+    gap: 50px;
 }
 
 
@@ -152,7 +157,7 @@ footer{
 
 
 
-.desarrollo, .diseño, .WPO, .back, .social{
+.desarrollo, .diseño, .WPO, .back, .socialAcerca{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     display: flex;
@@ -302,7 +307,17 @@ footer{
 }
 
 .back1, .back2, .back3, .back4, .back5, .back6{
-    background-color:hsla(333, 100%, 43%, 0.548);
+    transition: background-color, height 0.2s;
+    height: 50%;
+}
+
+.project1:hover .back1, .project1:hover .inside1, 
+.project2:hover .back2, .project2:hover .inside2,
+.project3:hover .back3, .project3:hover .inside3,
+.project4:hover .back4, .project4:hover .inside4,
+.project5:hover .back5, .project5:hover .inside5,
+.project6:hover .back6, .project6:hover .inside6{
+    background-color: var(--fucshia2);
     height: 100%;
 }
 
@@ -314,15 +329,6 @@ footer{
 .project6:hover .back6, .project6:hover .inside6{
     visibility: visible;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -362,6 +368,7 @@ footer{
     flex-direction: column;
     align-self: center;
     align-items: center;
+    justify-content: center;
     background-color: white;
     width: 700px;
     padding-top: 50px;
@@ -371,4 +378,182 @@ footer{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.testiText{
+    display: flex;
+    justify-content: center;
+    height: 85px;
+    width: 90%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}      
+
+.subTesti h4{
+    color: var(--fucshia);
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+.subTesti h5{
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.sign{
+    font-size: xx-large;
+    word-spacing: 25px;
+    padding-bottom: 50px;
+}
+
+
+/* Contacto */
+
+.contactoConta{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contacHead{
+    display: inline;
+    align-self: center;
+    border-bottom: 3px solid var(--fucshia);
+    border-top: 3px solid var(--fucshia);
+    margin: 20px;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.subContact{
+    display: flex;
+    justify-content: center;
+}
+
+.ubica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+    -2px -2px 2px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.tel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+    -2px -2px 2px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+    -2px -2px 2px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+    -2px -2px 2px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+
+.formCont{
+    align-self: center;
+    box-shadow: 
+    -2px -2px 2px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    height: 330px;
+    width: 35%;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.nombre{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.emai{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    
+}
+
+.textArea{
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+
+.button3{
+    background-color: var(--fucshia);
+    height: 40px;
+    border-radius: 19px;
+    border-style: none;
+    color: white;
+    position: relative;
+    left: 30%;
+}
+
+
+/* HOVERS */
+
+
+.navContent a:hover{
+    color: white;
+}
+
+.button1:hover{
+    border:1px solid var(--fucshia);
+    background-color: white;
+    color: var(--fucshia);
+}
+
+.button2:hover{
+    border:1px solid var(--fucshia);
+    background-color: white;
+    color: var(--fucshia);
+}
+
+.button3:hover{
+    border:1px solid var(--fucshia);
+    background-color: white;
+    color: var(--fucshia);
 }
